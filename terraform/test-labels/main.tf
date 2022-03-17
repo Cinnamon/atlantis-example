@@ -3,7 +3,7 @@ terraform {
 }
 
 module "label" {
-    source = "../.."
+    source = "git@github.com:Cinnamon/terraform-null-labels.git"
     product = "dso"
     tenant = "test"
     # environment = "us-east-1a"

@@ -1,19 +1,24 @@
 version: 3
 automerge: false
 projects:
-- name: demo
-  dir: demo
+- name: terraform-demo1
+  dir: terraform/demo/demo1
   workspace: default
   terraform_version: v1.1.7
   autoplan:
     when_modified: ["*.tf"]
     enabled: true
-  apply_requirements: [approved]
-- name: demo2
-  dir: demo2
+- name: terraform-demo2
+  dir: terraform/demo/demo2
   workspace: default
   terraform_version: v1.1.7
   autoplan:
     when_modified: ["*.tf"]
     enabled: true
-  apply_requirements: [approved]
+- name: terraform-test-labels
+  dir: terraform/demo/demo2
+  workspace: default
+  terraform_version: v1.1.7
+  autoplan:
+    when_modified: ["*.tf"]
+    enabled: true

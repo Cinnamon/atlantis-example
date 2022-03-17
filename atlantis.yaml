@@ -1,0 +1,11 @@
+version: 3
+automerge: true
+projects:
+- name: demo
+  dir: demo
+  workspace: default
+  terraform_version: v1.1.7
+  autoplan:
+    when_modified: ["*.tf"]
+    enabled: true
+  apply_requirements: [approved]

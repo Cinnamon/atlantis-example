@@ -8,7 +8,8 @@ terraform {
     bucket         = "cinnamon-terraform-state"
     key            = "dso/tmp/terraform.tfstate"
     region         = "ap-northeast-1"
-    encrypt        = true
+    encrypt        = false
+    profile  = "dso"
     dynamodb_table = "cinnamon-terraform-state-lock"
   }
 }

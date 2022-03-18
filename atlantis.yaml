@@ -30,7 +30,7 @@ projects:
     when_modified: ["*.tf"]
     enabled: true
 - name: terragrunt-dso-tmp
-  dir: terragrunt/dso/tmp
+  dir: terragrunt/dso/terragrunt-tmp
   workspace: default
   terraform_version: v1.1.7
   workflow: terragrunt

@@ -22,3 +22,10 @@ projects:
   autoplan:
     when_modified: ["*.tf"]
     enabled: true
+- name: terraform-dso-tmp
+  dir: terraform/dso/tmp
+  workspace: default
+  terraform_version: v1.1.7
+  autoplan:
+    when_modified: ["*.tf"]
+    enabled: true

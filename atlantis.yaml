@@ -29,3 +29,11 @@ projects:
   autoplan:
     when_modified: ["*.tf"]
     enabled: true
+- name: terragrunt-dso-tmp
+  dir: terragrunt/dso/tmp
+  workspace: default
+  terraform_version: v1.1.7
+  workflow: terragrunt
+  autoplan:
+    when_modified: ["*.yml","*.hcl"]
+    enabled: true
